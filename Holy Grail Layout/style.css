@@ -1,0 +1,61 @@
+header,
+article,
+nav,
+aside,
+footer {
+  border-radius: 5px;
+  margin: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: greenyellow;
+  height: 50px;
+}
+
+header a {
+  margin: 20px;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  background-color: lightgray;
+  order: -1;
+  flex-basis: 20%;
+}
+
+article {
+  height: 800px;
+  flex-basis: 80%;
+}
+
+aside {
+  background-color: cornflowerblue;
+  flex-basis: 20%;
+}
+
+footer {
+  display: flex;
+  background-color: greenyellow;
+  height: 50px;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    flex-basis: 800px;
+  }
+
+  nav {
+    order: 0;
+  }
+}
